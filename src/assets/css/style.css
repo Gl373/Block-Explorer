@@ -1,0 +1,195 @@
+/* ============================= */
+/* 🔹 Global Styling - Används på alla sidor */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import 'reset.css';
+@import 'variables.css';
+@import 'transactions.css';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ============================= */
+/* 🔹 Header och Navigation */
+header {
+  width: 100%;
+  background: var(--dark-blue);
+  padding: 1.5rem 0; /* Ökar höjden på headern */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  width: 100%;
+}
+
+nav .menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ============================= */
+/* 🔹 Logotyp Styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Avstånd mellan logotyp och text */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--gold);
+}
+
+.logo-img {
+  height: 40px; /* Justera storleken på loggan */
+  width: auto;
+}
+
+.menu-item {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-shadow: 0px 0px 6px rgba(255, 215, 0, 0.6);
+}
+
+/* Säkerställ att länkar i menyn inte ärvda av annan färg */
+.menu-item a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+/* ============================= */
+/* 🔹 Fix för att centrera alla sidtitlar */
+.page-title {
+  text-align: center;
+  width: 100%;
+  margin: 2rem auto; /* Gör att den ligger snyggt i mitten */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* ============================= */
+/* 🔹 Fix för att centrera blocken */
+#list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ser till att blocken hamnar i mitten */
+  width: 100%;
+}
+
+.block-card {
+  width: 90%;
+  max-width: 800px; /* Gör att de har en fast maxbredd */
+  margin: 1rem auto; /* Centrerar horisontellt */
+  padding: 1rem;
+  background: var(--background-light);
+  color: var(--text-light);
+  border-radius: var(--rounded);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================= */
+/* 🔹 Home-sida Styling */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+  padding: 2rem;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.main-image {
+  max-width: 500px;
+  width: 100%;
+  min-height: 60vh;
+}
+
+.main-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--rounded);
+}
+
+/* ============================= */
+/* 🔹 Balance-sida Styling */
+.balance-container {
+  max-width: 600px;
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+  background: var(--background-light);
+  padding: var(--medium-space);
+  border-radius: var(--rounded);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-input {
+  flex: 1;
+  min-width: 400px;
+  padding: 0.7rem;
+  border: 1px solid var(--text-light);
+  border-radius: var(--rounded);
+  background: var(--background-dark);
+  color: var(--text-light);
+}
+
+.btn-primary {
+  padding: 0.7rem 1.5rem;
+  background: var(--gold);
+  color: var(--dark-blue);
+  border: none;
+  cursor: pointer;
+  border-radius: var(--rounded);
+  font-weight: bold;
+}
+
+/* ============================= */
+/* 🔹 Responsiv Design */
+@media (max-width: 768px) {
+  .balance-container {
+    width: 95%;
+  }
+
+  .form-input {
+    min-width: 100%;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+}

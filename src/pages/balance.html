@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Balance | Block Explorer</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/55174c58a9.js"
+      crossorigin="anonymous"></script>
+    <script type="module" src="../js/balance.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <div class="logo">
+            <img
+              src="../assets/images/logo.png"
+              alt="Block Explorer Logo"
+              class="logo-img" />
+            Block Explorer
+          </div>
+        </div>
+        <ul class="menu">
+          <li class="separator">|</li>
+          <li class="menu-item"><a href="../../index.html">Home</a></li>
+          <li class="separator">|</li>
+          <li class="menu-item"><a href="./blocks.html">Blocks</a></li>
+          <li class="separator">|</li>
+          <li class="menu-item"><a href="./balance.html">Check Balance</a></li>
+          <li class="separator">|</li>
+          <li class="menu-item">
+            <a href="./transaction.html">Transaction</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1 class="page-title">Check Account Balance</h1>
+
+        <div class="balance-container">
+          <div class="card">
+            <h2 class="form-title">Ethereum Address</h2>
+            <form id="balance-form">
+              <div class="form-control">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="address"
+                    class="form-input"
+                    placeholder="0x000..." />
+                  <button type="submit" class="btn btn-primary">
+                    Check Balance
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div id="balance-result"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+/* variables.css */
+:root {
+  /* 🎨 Primära färger */
+  --dark-blue: #0b08e6; /* Mörkblå, för header */
+  --medium-blue: #003459; /* Marinblå */
+  --gold: #ffd700; /* Ändrad till en skarpare guldfärg */
+
+  /* 🎨 Bakgrund och text */
+  --background-dark: #1b1b1f; /* Mörkgrå istället för kolsvart */
+  --background-light: #2a2d36; /* Lite ljusare grå */
+  --text-light: #e0e0e0; /* Ljus text (inte vit, för mindre skarp kontrast) */
+  --text-dark: #161616; /* Mörk text för ljusa sektioner */
+
+  /* 🛠 Spacing */
+  --small-space: 0.5rem;
+  --medium-space: 1rem;
+  --large-space: 2rem;
+
+  /* 🛠 Rundade hörn */
+  --rounded: 8px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Transaction | Block Explorer</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/55174c58a9.js"
+      crossorigin="anonymous"></script>
+    <script type="module" src="../js/add-transaction.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            src="../assets/images/logo.png"
+            alt="Block Explorer Logo"
+            class="logo-img" />
+          Block Explorer
+        </div>
+        <ul class="menu">
+          <li class="separator">|</li>
+          <li class="menu-item"><a href="../../index.html">Home</a></li>
+          <li class="separator">|</li>
+          <li class="menu-item"><a href="./blocks.html">Blocks</a></li>
+          <li class="separator">|</li>
+          <li class="menu-item"><a href="./balance.html">Check Balance</a></li>
+          <li class="separator">|</li>
+          <li class="menu-item">
+            <a href="./transaction.html">Transaction</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="transaction-wrapper">
+      <h1 class="page-title">Create new Transaction</h1>
+      <div class="transaction-container">
+        <form id="transaction-form">
+          <div class="form-control">
+            <label for="from">From:</label>
+            <input
+              type="text"
+              name="from"
+              id="from"
+              placeholder="0xd2b63acfC302bFD4B838dD3B681B983edd79e281" />
+          </div>
+          <div class="form-control">
+            <label for="to">To:</label>
+            <input
+              type="text"
+              name="to"
+              id="to"
+              placeholder="0x437E71E9db8FD66167aCbbAd1390B518f4c6496" />
+          </div>
+          <div class="form-control">
+            <label for="value">Value:</label>
+            <input
+              type="text"
+              name="value"
+              id="value"
+              placeholder="Value in Ether" />
+          </div>
+          <button class="btn btn-rounded">Create</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
