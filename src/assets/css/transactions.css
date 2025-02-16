@@ -1,9 +1,6 @@
-/* ============================= */
-/* 🔹 Transactions & Blocks Styling */
 @import 'variables.css';
 
-/* ============================= */
-/* 🔹 Blocks-sidan */
+/* Blocks-sidan */
 .blocks-container {
   display: flex;
   flex-direction: column;
@@ -60,8 +57,7 @@
   transform: rotate(180deg);
 }
 
-/* ============================= */
-/* 🔹 Transactions Page Styling */
+/* Transactions Page Styling */
 
 .transaction-wrapper {
   display: flex;
@@ -72,9 +68,8 @@
   padding: 1rem 0;
 }
 
-/* 🛠 Transaction-formulär fix */
 .transaction-container {
-  max-width: 500px; /* Håller det smalt */
+  max-width: 500px; 
   width: 90%;
   background: var(--background-light);
   padding: 2rem;
@@ -86,7 +81,7 @@
   align-items: center;
 }
 
-/* 🛠 Formulärstil */
+/* Formulärstil */
 #transaction-form {
   width: 100%;
   display: flex;
@@ -117,7 +112,7 @@
   width: 100%;
 }
 
-/* 🛠 Knapp-styling */
+/* Knapp-styling */
 .btn-rounded {
   padding: 0.7rem 1.5rem;
   background: var(--gold);
@@ -130,8 +125,7 @@
   width: 100%;
 }
 
-/* ============================= */
-/* 🔹 Responsiv Fix */
+/* Responsivt */
 @media (max-width: 768px) {
   .transaction-container {
     width: 95%;

@@ -1,5 +1,3 @@
-/* ============================= */
-/* 🔹 Global Styling - Används på alla sidor */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 @import 'reset.css';
 @import 'variables.css';
@@ -20,8 +18,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ============================= */
-/* 🔹 Header och Navigation */
+/*  Header och Navigation */
 header {
   width: 100%;
   background: var(--dark-blue);
@@ -43,19 +40,18 @@ nav .menu {
   gap: 1rem;
 }
 
-/* ============================= */
-/* 🔹 Logotyp Styling */
+/* Logotyp Styling */
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* Avstånd mellan logotyp och text */
+  gap: 0.5rem; 
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--gold);
 }
 
 .logo-img {
-  height: 40px; /* Justera storleken på loggan */
+  height: 40px; 
   width: auto;
 }
 
@@ -67,24 +63,21 @@ nav .menu {
   text-shadow: 0px 0px 6px rgba(255, 215, 0, 0.6);
 }
 
-/* Säkerställ att länkar i menyn inte ärvda av annan färg */
 .menu-item a {
   color: var(--gold);
   text-decoration: none;
 }
 
-/* ============================= */
-/* 🔹 Fix för att centrera alla sidtitlar */
+/* Fix för att centrera alla sidtitlar */
 .page-title {
   text-align: center;
   width: 100%;
-  margin: 2rem auto; /* Gör att den ligger snyggt i mitten */
+  margin: 2rem auto; 
   font-size: 2rem;
   font-weight: bold;
 }
 
-/* ============================= */
-/* 🔹 Fix för att centrera blocken */
+/* Fix för att centrera blocken */
 #list {
   display: flex;
   flex-direction: column;
@@ -94,8 +87,8 @@ nav .menu {
 
 .block-card {
   width: 90%;
-  max-width: 800px; /* Gör att de har en fast maxbredd */
-  margin: 1rem auto; /* Centrerar horisontellt */
+  max-width: 800px; 
+  margin: 1rem auto; 
   padding: 1rem;
   background: var(--background-light);
   color: var(--text-light);
@@ -103,8 +96,7 @@ nav .menu {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* ============================= */
-/* 🔹 Home-sida Styling */
+/* Home-sida Styling */
 .home-container {
   display: flex;
   flex-direction: column;
@@ -135,8 +127,7 @@ nav .menu {
   border-radius: var(--rounded);
 }
 
-/* ============================= */
-/* 🔹 Balance-sida Styling */
+/* Balance-sida Styling */
 .balance-container {
   max-width: 600px;
   width: 90%;
@@ -173,8 +164,7 @@ nav .menu {
   font-weight: bold;
 }
 
-/* ============================= */
-/* 🔹 Responsiv Design */
+/* Responsivt */
 @media (max-width: 768px) {
   .balance-container {
     width: 95%;

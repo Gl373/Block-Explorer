@@ -22,7 +22,8 @@ const sendTransaction = async (e) => {
     // Felmeddelande: använd punkt, inte komma
     const errorDiv = document.createElement('div');
     errorDiv.style.color = 'red';
-    errorDiv.innerHTML = 'Please use decimal point (.) instead of comma. Example: 0.5';
+    errorDiv.innerHTML =
+      'Please use decimal point (.) instead of comma. Example: 0.5';
     document.querySelector('#transaction-form').appendChild(errorDiv);
   }
 };

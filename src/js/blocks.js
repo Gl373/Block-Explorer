@@ -50,7 +50,7 @@ const listBlocks = async () => {
     </div>
 `;
 
-// Expandering block med pilar
+    // Expandering block med pilar
     const arrow = blockDiv.querySelector('.block-arrow');
     arrow.innerHTML = `<i class="fas fa-chevron-down"></i>`;
 

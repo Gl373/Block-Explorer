@@ -12,7 +12,9 @@ const checkBalance = async (e) => {
   try {
     const balance = await client.getBalance({ address });
     const balanceInEther = formatEther(balance);
-    resultDiv.innerHTML = `Balance: ${parseFloat(balanceInEther).toFixed(2)} ETH`; 
+    resultDiv.innerHTML = `Balance: ${parseFloat(balanceInEther).toFixed(
+      2
+    )} ETH`;
   } catch (error) {
     resultDiv.innerHTML = 'Error fetching balance';
   }
